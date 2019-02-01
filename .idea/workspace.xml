@@ -12,23 +12,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.58134645">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/storm_getUrl.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#9#43#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/storm_getContent.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1134">
-                  <caret line="66" selection-start-line="66" selection-end-line="66" />
+                <state relative-caret-position="284">
+                  <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
                   <folding>
                     <element signature="e#9#43#0" expanded="true" />
                   </folding>
@@ -51,8 +39,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/storm_getContent_2.0.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="511">
-                  <caret line="84" selection-start-line="84" selection-end-line="84" />
+                <state relative-caret-position="295">
+                  <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
                   <folding>
                     <element signature="e#9#43#0" expanded="true" />
                   </folding>
@@ -105,11 +93,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/storm_getView_2.0.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="554">
-                  <caret line="161" column="13" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="13" />
+                <state relative-caret-position="338">
+                  <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#9#43#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/storm_getView.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="401">
+                  <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
                   <folding>
                     <element signature="e#9#43#0" expanded="true" />
                   </folding>
@@ -120,8 +120,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/storm_getUrl_2.0.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2574">
-                  <caret line="146" column="25" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
+                <state relative-caret-position="2754">
+                  <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
                   <folding>
                     <element signature="e#9#43#0" expanded="true" />
                   </folding>
@@ -181,16 +181,16 @@
         <option value="$PROJECT_DIR$/getUrlv3 (1).py" />
         <option value="$PROJECT_DIR$/getContentv3.py" />
         <option value="$PROJECT_DIR$/getUrlv3.py" />
-        <option value="$PROJECT_DIR$/storm_getView.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/usage_detect.py" />
         <option value="$PROJECT_DIR$/usage_detect_2.0.py" />
         <option value="$PROJECT_DIR$/storm_getUrl_2.0.py" />
-        <option value="$PROJECT_DIR$/storm_getContent.py" />
         <option value="$PROJECT_DIR$/storm_getUrl.py" />
-        <option value="$PROJECT_DIR$/storm_getContent_2.0.py" />
-        <option value="$PROJECT_DIR$/storm_getView_2.0.py" />
         <option value="$PROJECT_DIR$/aws_linenotify.py" />
+        <option value="$PROJECT_DIR$/storm_getView_2.0.py" />
+        <option value="$PROJECT_DIR$/storm_getView.py" />
+        <option value="$PROJECT_DIR$/storm_getContent_2.0.py" />
+        <option value="$PROJECT_DIR$/storm_getContent.py" />
       </list>
     </option>
   </component>
@@ -205,22 +205,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="ec2_news_crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ec2_news_crawler" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../news_crawler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -387,10 +387,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13992763" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13960867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -440,16 +440,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/專題/爬蟲程式/getUrlv3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-586">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="e#9#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/專題/爬蟲程式/getUrlv3.py" />
     <entry file="file://$PROJECT_DIR$/update_apple_news_url.txt" />
     <entry file="file://$PROJECT_DIR$/storm_taiwan_news_url.txt" />
     <entry file="file://$PROJECT_DIR$/storm_finance_getUrl.py" />
@@ -488,49 +479,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/update_storm_world_news_url_tmp.txt" />
     <entry file="file://$PROJECT_DIR$/update_storm_civic_news_url_tmp.txt" />
-    <entry file="file://$PROJECT_DIR$/storm_getView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding>
-            <element signature="e#9#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/lineNotify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/lineNotify.py" />
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/storm_news_url.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="384" column="35" lean-forward="true" selection-start-line="384" selection-start-column="35" selection-end-line="384" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/storm_news_url.txt" />
     <entry file="file://$PROJECT_DIR$/update_storm_news_url.txt" />
     <entry file="file://$PROJECT_DIR$/storm_getUrl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding>
-            <element signature="e#9#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storm_getContent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="e#9#43#0" expanded="true" />
           </folding>
@@ -574,16 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storm_getUrl_2.0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2574">
-          <caret line="146" column="25" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
-          <folding>
-            <element signature="e#9#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/usage_detect_2.0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -594,20 +540,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storm_getContent_2.0.py">
+    <entry file="file://$PROJECT_DIR$/storm_getView_2.0.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="338">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
           <folding>
             <element signature="e#9#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storm_getView_2.0.py">
+    <entry file="file://$PROJECT_DIR$/storm_getView.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="161" column="13" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="13" />
+        <state relative-caret-position="401">
+          <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+          <folding>
+            <element signature="e#9#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storm_getUrl_2.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+          <folding>
+            <element signature="e#9#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storm_getContent_2.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="e#9#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storm_getContent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
           <folding>
             <element signature="e#9#43#0" expanded="true" />
           </folding>

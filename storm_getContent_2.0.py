@@ -33,6 +33,7 @@ def getNewsContent(urlQueue):
                     "公民運動": "politics",
                     "風生活": "life",
                     "風攝影": "life",
+                    "品味生活": "life",
                     "運動": "sports",
                     "評論": "forum",
                     "軍事": "military",
