@@ -161,7 +161,7 @@ if __name__ == "__main__":
         news_dict = {"date": date, "news": date_news_list}
 
         ## 如果檔案存在
-        if os.path.exists(date + "_storm_news.json"):
+        if os.path.exists("./newsfolder/" + date + "_storm_news.json"):
             # 開啟之前紀錄新聞內容的檔案
             with open("./newsfolder/" + date + "_storm_news.json", "r", encoding="utf-8") as f:
                 file_content = json.load(f)
