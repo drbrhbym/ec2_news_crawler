@@ -105,6 +105,7 @@ if __name__ == "__main__":
             old_view_list = f.read().split("\n")
         old_view_list.remove("")
         view_update_url_list.extend(old_view_list)
+        view_update_url_list.remove("")
         with open("update_for_view.txt", "w", encoding="utf-8") as f:
             while True:
                 try:
