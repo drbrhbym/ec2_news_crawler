@@ -1,7 +1,7 @@
 # 引用相關套件
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-import threading, queue, time, os, json, glob, datetime
+import threading, queue, time, os, json, glob, datetime, fcntl
 import warnings
 warnings.filterwarnings('ignore')
 from aws_linenotify import lineNotify
@@ -66,7 +66,7 @@ def getNewsContent(urlQueue):
         for word in key_word:
             news_keyword.append(word.text)
 
-        print("正在處理:", news_url)
+        #print("正在處理:", news_url)
 
         # 將新聞內容放入佇列
         try:
@@ -82,8 +82,7 @@ def getNewsContent(urlQueue):
             lineNotify("Got KeyError: " + str(e))
 
         # 爲了突出效果，設定延時
-        time.sleep(1)
-
+        #time.sleep(1)
 
 
 if __name__ == "__main__":
@@ -100,8 +99,50 @@ if __name__ == "__main__":
         else:
             time.sleep(120)
 
+    if os.path.exists("update_for_view.txt"):
+        view_update_url_list = url_list.copy()
+        with open("update_for_view.txt", "r", encoding="utf-8") as f:
+            old_view_list = f.read().split("\n")
+        old_view_list.remove("")
+        view_update_url_list.extend(old_view_list)
+        with open("update_for_view.txt", "w", encoding="utf-8") as f:
+            while True:
+                try:
+                    # 得到file lock
+                    fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                    for url in view_update_url_list:
+                        f.write(str(url + "\n"))
+                    # 釋放file lock
+                    fcntl.flock(f, fcntl.LOCK_UN)
+                    break
+                except OSError:
+                    print("update_for_view.txt locked!")
+                finally:
+                    # 釋放file lock
+                    fcntl.flock(f, fcntl.LOCK_UN)
+    else:
+        with open("update_for_view.txt", "w", encoding="utf-8") as f:
+            while True:
+                try:
+                    # 得到file lock
+                    fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                    for url in url_list:
+                        f.write(str(url + "\n"))
+                    # 釋放file lock
+                    fcntl.flock(f, fcntl.LOCK_UN)
+                    break
+                except OSError:
+                    print("update_for_view.txt locked!")
+                finally:
+                    # 釋放file lock
+                    fcntl.flock(f, fcntl.LOCK_UN)
+
     # 更改檔案名字
     os.rename("update_storm_news_url.txt", "update_storm_news_url.txt.bak")
+    path = './tmpfolder/*'
+    r = glob.glob(path)
+    for i in r:
+        os.remove(i)
 
     # 紀錄爬蟲開始時間
     start_time = time.time()
@@ -190,10 +231,6 @@ if __name__ == "__main__":
 
     # 使用系統指令刪除檔案
     os.remove("update_storm_news_url.txt.bak")
-    path = './tmpfolder/*'
-    r = glob.glob(path)
-    for i in r:
-        os.remove(i)
 
     # 紀錄刪除檔案結束時間
     end_time = time.time()

@@ -53,7 +53,7 @@ def getNewsView(urlQueue):
 
         news_tag = news_html.find("a", class_="tags_link").text
 
-        print("正在處理:", news_url)
+        #print("正在處理:", news_url)
 
         # 將新聞觀看數放入佇列
         try:
@@ -67,7 +67,7 @@ def getNewsView(urlQueue):
 
 
         # 爲了突出效果，設定延時
-        time.sleep(1)
+        #time.sleep(1)
 
 if __name__ == "__main__":
 
@@ -76,19 +76,9 @@ if __name__ == "__main__":
 
     # 開啟要爬的新聞網址檔案
     while True:
-        if os.path.exists("storm_news_url.txt"):
-            with open("storm_news_url.txt", "r", encoding="utf-8") as f:
-                while True:
-                    try:
-                        fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
-                        url_list = f.read().split("\n")
-                        fcntl.flock(f, fcntl.LOCK_UN)
-                        break
-                    except OSError:
-                        print("apple_news_url.txt locked!")
-                    finally:
-                        fcntl.flock(f, fcntl.LOCK_UN)
-
+        if os.path.exists("update_for_view.txt"):
+            with open("update_for_view.txt", "r", encoding="utf-8") as f:
+                url_list = f.read().split("\n")
             break
         else:
             time.sleep(120)

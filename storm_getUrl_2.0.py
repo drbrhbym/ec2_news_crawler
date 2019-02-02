@@ -146,14 +146,14 @@ if __name__ == "__main__":
     if not os.path.exists(path):
         os.makedirs(path)
 
-    crab(118, "politic", 71)
-    crab(117, "world", 71)
-    crab(23083, "finance", 71)
+    crab(118, "politic", 21)
+    crab(117, "world", 21)
+    crab(23083, "finance", 21)
     crab(24667, "research", 6)
     crab(26644, "military", 6)
     crab(118606, "sports", 21)
     crab(84984, "arts", 16)
-    crab(121, "china", 71)
+    crab(121, "china", 21)
     crab(965, "civic", 6)
 
 

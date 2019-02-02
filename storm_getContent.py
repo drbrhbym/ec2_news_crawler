@@ -96,6 +96,22 @@ if __name__ == "__main__":
         else:
             time.sleep(120)
 
+    if os.path.exists("update_for_view.txt"):
+        view_update_url_list = url_list.copy()
+        with open("update_for_view.txt", "r", encoding="utf-8") as f:
+            old_view_list = f.read().split("\n")
+        old_view_list.remove("")
+        view_update_url_list.extend(old_view_list)
+        with open("update_for_view.txt", "w", encoding="utf-8") as f:
+            for url in view_update_url_list:
+                f.write(str(url + "\n"))
+
+    else:
+        with open("update_for_view.txt", "w", encoding="utf-8") as f:
+            for url in url_list:
+                f.write(str(url + "\n"))
+
+
     # 更改檔案名字
     os.rename("update_storm_news_url.txt", "update_storm_news_url.txt.bak")
 
